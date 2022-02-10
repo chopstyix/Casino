@@ -12,6 +12,8 @@ local cardBack = paintutils.loadImage("cardback.nfp")
 mainMon.setTextScale(0.5)
 infoMon.setTextScale(0.5)
 
+--# Classes
+
 --# Functions
 function getImageSize(image)
   local height = #image
@@ -51,7 +53,7 @@ function drawMain()
   term.setBackgroundColor(colors.green)
   term.clear()
   -- If player taps card 1, it will flip the card.
-  if (tx >= 5) and (tx <= (5+width)) and then
+  --if (tx >= 5) and (tx <= (5+width)) and then
   paintutils.drawImage(cardBack,5,2) --# Card 1
   paintutils.drawImage(card,20,2) --# Card 2
 end
